@@ -56,6 +56,7 @@ public class ActionBeanAnalysis {
 		String  tableName = "csvMetadataTable";	
 		String columnNames = "";
 		String sqlQuery = "SELECT `column_names` from " + tableName + " WHERE `table_name`='" + dataset + "'";
+		
 		dbaseAccessBean.executeSQL(sqlQuery);
 		dbaseAccessBean.generateResult();
 		
