@@ -112,7 +112,7 @@ public class ActionBeanFile {
 			Scanner csvData = new Scanner(tempFile);
 			String rowCsvData;
 				
-			// do data validation
+			// do data validation in the method csvDataValid in the same class
 			if ( ! this.csvDataValid(csvData)) {
 				return "fail";
 			}	
